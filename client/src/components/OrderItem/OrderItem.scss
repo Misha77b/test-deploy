@@ -1,0 +1,27 @@
+@import "../../boilerplates/styles//variables";
+
+.item-product {
+	display: flex;
+	flex-direction: row;
+	// align-items: center;
+	// justify-content: space-between;
+	background: #f5f5f5;
+	padding: 15px 15px 15px 20px;
+	font-family: $base-font;
+	&--img {
+		margin-right: 15px;
+		height: 80px;
+		width: 75px;
+		object-fit: contain;
+		// @media screen and (max-width: 400px) {
+		// 	margin: 10px 0;
+		// }
+		@media screen and (max-width: 375px) {
+			height: 70px;
+			width: 65px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		padding: 5px;
+	}
+}

@@ -1,0 +1,14 @@
+@import "../../boilerplates/styles/mixins";
+@import "../../boilerplates/styles/variables";
+.category__title__wrapper {
+	display: flex;
+	justify-content: flex-start;
+	margin: 2.5% 0;
+	.category__title {
+		font-family: $secondary-font;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 29px;
+		color: $light-black-color;
+	}
+}

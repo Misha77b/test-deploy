@@ -1,0 +1,33 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(33, 39, 40, 0.6);
+	z-index: 4;
+}
+.modal {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	gap: 30px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	&__btn {
+		margin: 0;
+		display: flex;
+		padding: 5px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		transition: background-color 0.3s linear;
+		border-radius: 5px;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+}
